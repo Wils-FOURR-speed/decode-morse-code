@@ -41,3 +41,11 @@ class MorseCodeDecoder
     words.map { |word| decode_word(word) }.join(' ')
   end
 end
+
+# Testing the Morse code decoder
+
+message = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'
+
+decoded_message = MorseCodeDecoder.decode_message(message)
+
+puts decoded_message
